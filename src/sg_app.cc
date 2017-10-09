@@ -46,11 +46,15 @@ SGApp::~SGApp()
     FreeData();
   }
   data_filter_terminate();
+  delete[] g_input_filename;
 }
 
 void SGApp::FreeData()
 {
   uint32_t n = g_road_rec->GetNumPacks();
+  delete g_road_rec;
+  g_road_rec = NULL;
+
   for (uint32_t i=0; i<n; ++i)
   {
     delete[] points[i];
@@ -62,9 +66,6 @@ void SGApp::FreeData()
   delete[] out_of_range;
   delete[] points_gl_array;
   delete[] colors_gl_array;
-
-  delete g_road_rec;
-  delete[] g_input_filename;
 }
 
 bool SGApp::Init()

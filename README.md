@@ -10,8 +10,9 @@ engineering.
     - Dependencies required to build SGApp from source:
         + wxWidgets
         + OpenGL
+        + GLEW
     - To build SGApp from source, simply change to main directory of the source and type "make"
 
 2. RUN
-    Folder "in/" in the root folder contains samples taken from SGPiApp (link: https://github.com/minh143/SGPiApp)
+    Folder "in/" in the root folder contains samples taken from SGPiApp (link: https://github.com/hamk-automation/SGPiApp)
     that can be visualized by this application.

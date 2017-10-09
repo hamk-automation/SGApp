@@ -10,6 +10,7 @@ engineering.
     - Dependencies required to build SGApp from source:
         + wxWidgets
         + OpenGL
+        + GLEW
     - To build SGApp from source, simply change to main directory of the source and type "make"
 
 2. RUN
